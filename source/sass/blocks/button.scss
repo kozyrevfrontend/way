@@ -106,9 +106,12 @@
 
       background-position: 196px center;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $color-accent;
+      }
+
+      &:hover {
+        background-color: $color-accent-hover;
       }
 
       &:active {
@@ -141,7 +144,7 @@
     }
 
     &--promo {
-      width: 90%;
+      width: 288px;
       margin-bottom: 30px;
 
       font-size: 10px;
@@ -150,9 +153,12 @@
 
       background-position: right 39px bottom 17px;
 
-      &:hover,
-      &:focus {
+      &:hover {
         background-color: $color-accent;
+      }
+
+      &:hover {
+        background-color: $color-accent-hover;
       }
 
       &:active {
