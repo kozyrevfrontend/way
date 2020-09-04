@@ -17,7 +17,8 @@
   text-decoration: none;
   color: $color-accent-dark;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-accent-hover;
   }
 
@@ -69,7 +70,8 @@
     font-weight: 600;
     line-height: 28px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-accent-dark;
     }
 
