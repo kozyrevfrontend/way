@@ -42,3 +42,44 @@
   letter-spacing: -0.46px;
   color: $color-secondary-light;
 }
+
+@media (max-width: $tablet-width) {
+  .promo {
+    min-height: 344px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    background-image: url("../img/promo-bg-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-tablet@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    width: 100%;
+  }
+
+  .promo__title {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .promo__description {
+    width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+
+    text-align: center;
+    letter-spacing: -0.47px;
+  }
+}
