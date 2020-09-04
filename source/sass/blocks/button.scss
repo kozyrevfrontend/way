@@ -1,0 +1,66 @@
+.button {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  color: $color-secondary-light;
+
+  border: none;
+  background-color: $color-accent;
+  cursor: pointer;
+}
+
+@media (max-width: $tablet-width) {
+  .button {
+    outline: none;
+
+    &--toggle {
+      display: none;
+      width: 50px;
+      height: 50px;
+    }
+
+    &--nav-closed {
+      display: block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 14px;
+
+        width: 23px;
+        height: 1px;
+
+        background-color: $color-secondary-light;
+        box-shadow: 0 5px 0 0 $color-secondary-light, 0 11px 0 0 $color-secondary-light;
+      }
+    }
+
+    &--nav-opened {
+      display: block;
+      background-color: $color-secondary-light;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 26px;
+        left: 10px;
+
+        width: 31px;
+        height: 1px;
+
+        background-color: rgba($color-accent-dark, 0.2%);
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
