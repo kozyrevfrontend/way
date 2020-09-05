@@ -148,3 +148,34 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: 1300px) {
+  .tours__title {
+    margin-left: 20px;
+  }
+
+  .tours__offer {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .tours__item {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n + 5):last-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 130px;
+    }
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+}
