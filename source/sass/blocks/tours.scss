@@ -1,0 +1,150 @@
+.tours {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.tours__title {
+  position: relative;
+
+  width: 358px;
+  margin: 0;
+  margin-bottom: 31px;
+  padding-bottom: 33px;
+
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $color-basic-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 229px;
+    height: 4px;
+
+    background-color: $color-accent;
+  }
+}
+
+.tours__offer {
+  width: 328px;
+  margin: 0;
+  margin-bottom: 55px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.46px;
+  color: rgba($color-basic-dark, 0.7%);
+}
+
+.tours__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tours__item {
+  position: relative;
+
+  margin-right: 60px;
+  margin-bottom: 101px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(3n + 5):last-child {
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  &:nth-child(3n + 4):last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  cursor: pointer;
+
+  picture {
+    display: block;
+    width: 350px;
+    height: 430px;
+  }
+
+  &:hover .tours__wrapper,
+  &:focus-within .tours__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tours__item-title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+
+  display: block;
+  width: 215px;
+  height: 61px;
+  margin: 0;
+  padding-top: 17px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.415px;
+  text-align: center;
+  color: $color-basic-dark;
+
+  background-color: $color-secondary-light;
+
+  transform: translateX(-50%);
+}
+
+.tours__wrapper {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 350px;
+  height: 430px;
+  background-color: rgba($color-accent-dark, 0.6%);
+}
+
+.tours__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 266px;
+  height: 77px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-secondary-light;
+
+  border: 1px solid rgba($color-secondary-light, 0.7%);
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
