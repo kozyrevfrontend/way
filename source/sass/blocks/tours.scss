@@ -58,17 +58,38 @@
   margin-right: 60px;
   margin-bottom: 101px;
 
-  &:nth-child(3n) {
+  &:nth-child(3) {
     margin-right: 0;
   }
 
-  &:nth-child(3n + 5):last-child {
+  &:nth-child(5):last-child {
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
+  &:nth-child(6) {
+    margin-right: 0;
+  }
+
+  &:nth-child(8):last-child {
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
+  &:nth-child(9) {
+    margin-right: 0;
+  }
+
+  &:nth-child(10):last-child {
+    margin-right: 0;
+  }
+
+  &:nth-child(11):last-child {
     margin-left: 60px;
     margin-right: 0;
   }
 
-  &:nth-child(3n + 4):last-child {
-    margin-left: 0;
+  &:nth-child(12) {
     margin-right: 0;
   }
 
@@ -141,41 +162,239 @@
 
   &:hover,
   &:focus {
-    opacity: 0.7;
+    opacity: 0.9;
   }
 
   &:active {
-    opacity: 0.5;
-  }
-}
-
-@media (max-width: 1300px) {
-  .tours__title {
-    margin-left: 20px;
-  }
-
-  .tours__offer {
-    margin-left: 20px;
+    opacity: 0.7;
   }
 }
 
 @media (max-width: 1170px) {
+  .tours__title {
+    margin-left: 17.47%;
+  }
+
+  .tours__offer {
+    margin-left: 17.47%;
+  }
+
   .tours__item {
-    &:nth-child(3n) {
+    margin-right: 61px;
+
+    &:nth-child(2) {
       margin-right: 0;
     }
 
-    &:nth-child(3n + 5):last-child {
+    &:nth-child(3) {
+      margin-right: 61px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5):last-child {
+      margin-right: 61px;
+      margin-left: 61px;
+    }
+
+    &:nth-child(7):last-child {
+      margin-right: 61px;
+      margin-left: 61px;
+    }
+
+    &:nth-child(8) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &:nth-child(9):last-child {
+      margin-right: 61px;
+      margin-left: 61px;
+    }
+
+    &:nth-child(9) {
+      margin-right: 61px;
+    }
+
+    &:nth-child(10) {
+      margin-right: 0;
+    }
+
+    &:nth-child(11):last-child {
+      margin-left: 61px;
+      margin-right: 61px;
+    }
+
+    &:nth-child(11) {
+      margin-right: 61px;
+    }
+
+    &:nth-child(12) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .tours {
+    max-width: 605px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  .tours__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 22px;
+    padding-bottom: 0;
+
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .tours__offer {
+    width: 328px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+
+    text-align: center;
+  }
+
+  .tours__item {
+    position: relative;
+
+    margin-right: 29px;
+    margin-bottom: 19px;
+
+    picture {
+      display: block;
+      width: 288px;
+      height: 425px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 29px;
+    }
+
+    &:nth-child(5):last-child {
+      margin-right: 29px;
+      margin-left: 29px;
+      margin-top: 12px;
+    }
+
+    &:nth-child(7):last-child {
+      margin-right: 29px;
+      margin-left: 29px;
+      margin-top: 12px;
+    }
+
+    &:nth-child(9):last-child {
+      margin-right: 29px;
+      margin-left: 29px;
+      margin-top: 12px;
+    }
+
+    &:nth-child(9) {
+      margin-right: 29px;
+    }
+
+    &:nth-child(11):last-child {
+      margin-left: 29px;
+      margin-right: 29px;
+      margin-top: 12px;
+    }
+
+    &:nth-child(11) {
+      margin-right: 29px;
+    }
+  }
+
+  .tours__wrapper {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tours {
+    width: 100%;
+    padding-top: 79px;
+  }
+
+  .tours__title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .tours__offer {
+    width: 100%;
+    margin-bottom: 19px;
+  }
+
+  .tours__list {
+    max-width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tours__item {
+    position: relative;
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(5):last-child {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &:nth-child(7):last-child {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &:nth-child(9):last-child {
+      margin-right: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &:nth-child(9) {
+      margin-right: 0;
+    }
+
+    &:nth-child(11):last-child {
       margin-left: 0;
       margin-right: 0;
+      margin-top: 0;
     }
 
-    &:nth-child(odd) {
-      margin-right: 130px;
-    }
-
-    &:nth-child(even) {
+    &:nth-child(11) {
       margin-right: 0;
     }
+
+    margin-right: 0;
+    margin-bottom: 35px;
   }
 }
