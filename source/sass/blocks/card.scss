@@ -1,0 +1,49 @@
+.card {
+  padding-left: 137px;
+}
+
+.card__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 31px;
+  padding-top: 9px;
+  padding-bottom: 17px;
+
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -1.245px;
+  color: $color-basic-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 175px;
+    height: 3px;
+
+    background-color: $color-accent;
+  }
+}
+
+.card__description {
+  margin: 0;
+  max-width: 370px;
+  margin-bottom: 49px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.46px;
+  color: rgba($color-basic-dark, 0.7%);
+}
+
+.card__feedback {
+  position: absolute;
+  top: 112px;
+  right: 137px;
+}

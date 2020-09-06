@@ -35,7 +35,7 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Путешествие по Европе</h1>
         <p class="promo__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="button button--promo" href="#"><span>Смотреть тур</span></a>
+        <a class="button button--basic button--promo" href="#"><span>Смотреть тур</span></a>
       </div>
     </section>
     <section class="tours">
@@ -94,8 +94,133 @@
         </li>
       </ul>
     </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог туров</h2>
+      <div class="catalog__tabs tabs swiper-container">
+        <ul class="tabs__list swiper-wrapper" role="tablist" aria-label="Список доступных туров">
+          <li class="tabs__item swiper-slide">
+            <button class="tabs__button" type="button" role="tab" aria-selected="true" aria-controls="greace-tab" id="greace">Греция</button>
+          </li>
+          <li class="tabs__item swiper-slide">
+            <button class="tabs__button" type="button" role="tab" aria-selected="false" aria-controls="albania-tab" id="albania" tabindex="-1">Албания</button>
+          </li>
+          <li class="tabs__item swiper-slide">
+            <button class="tabs__button" type="button" role="tab" aria-selected="false" aria-controls="makedonia-tab" id="makedonia" tabindex="-1">Македония</button>
+          </li>
+          <li class="tabs__item swiper-slide">
+            <button class="tabs__button" type="button" role="tab" aria-selected="false" aria-controls="montenegro-tab" id="montenegro" tabindex="-1">Черногория</button>
+          </li>
+          <li class="tabs__item swiper-slide">
+            <button class="tabs__button" type="button" role="tab" aria-selected="false" aria-controls="croatia-tab" id="croatia" tabindex="-1" data-deletable="">Хорватия</button>
+          </li>
+        </ul>
+      </div>
+      <div class="catalog__wrapper">
+        <ul class="catalog__list">
+          <li class="catalog__item card card--greace" tabindex="0" role="tabpanel" id="greace-tab" aria-labelledby="greace">
+            <h3 class="card__title">Греция</h3>
+            <p class="card__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+            <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
+            <article class="card__feedback feedback">
+              <h4 class="feedback__title">Отзывы</h4>
+              <p class="feedback__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+              <p class="feedback__author">Влада Голицина</p>
+            </article>
+          </li>
+          <li class="catalog__item card card--albania" tabindex="0" role="tabpanel" id="albania-tab" aria-labelledby="albania" hidden="">
+            <h3 class="card__title">Албания</h3>
+            <p class="card__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
+            <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
+            <article class="card__feedback feedback">
+              <h4 class="feedback__title">Отзывы</h4>
+              <p class="feedback__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+              <p class="feedback__author">Маришка</p>
+            </article>
+          </li>
+          <li class="catalog__item card card--makedonia" tabindex="0" role="tabpanel" id="makedonia-tab" aria-labelledby="makedonia" hidden="">
+            <h3 class="card__title">Македония</h3>
+            <p class="card__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+            <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
+            <article class="card__feedback feedback">
+              <h4 class="feedback__title">Отзывы</h4>
+              <p class="feedback__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+              <p class="feedback__author">Михаил Кузьмин</p>
+            </article>
+          </li>
+          <li class="catalog__item card card--montenegro" tabindex="0" role="tabpanel" id="montenegro-tab" aria-labelledby="montenegro" hidden="">
+            <h3 class="card__title">Черногория</h3>
+            <p class="card__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+            <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
+            <article class="card__feedback feedback">
+              <h4 class="feedback__title">Отзывы</h4>
+              <p class="feedback__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+              <p class="feedback__author">Анастасия Мей</p>
+            </article>
+          </li>
+          <li class="catalog__item card card--croatia" tabindex="0" role="tabpanel" id="croatia-tab" aria-labelledby="croatia" hidden="">
+            <h3 class="card__title">Хорватия</h3>
+            <p class="card__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+            <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
+            <article class="card__feedback feedback">
+              <h4 class="feedback__title">Отзывы</h4>
+              <p class="feedback__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+              <p class="feedback__author">Владимир Мулицин</p>
+            </article>
+          </li>
+        </ul>
+        <section class="catalog__price price">
+          <div class="price__wrapper">
+            <h3 class="price__title">Цены</h3>
+            <p class="price__slogan">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+            <b class="price__contact-us">Свяжитесь с нами</b>
+            <a class="price__phone" href="tel:749978468446">+7 (499) -784-684-46</a>
+          </div>
+          <ul class="price__list">
+            <li class="price__item">
+              <div class="price__item-wrapper">
+                <h4 class="price__item-title">Комплексный</h4>
+                <span class="price__value">$1999</span>
+              </div>
+              <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="price__content-list">
+                <li class="price__content-item">Разработанный маршрут с гидом группы</li>
+                <li class="price__content-item">Перелет, трансфер и проживание в отелях</li>
+                <li class="price__content-item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="price__content-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="button button--basic" href="">Купить тур сейчас</a>
+            </li>
+            <li class="price__item">
+              <div class="price__item-wrapper">
+                <h4 class="price__item-title">Экономный</h4>
+                <span class="price__value">$1399</span>
+              </div>
+              <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="price__content-list">
+                <li class="price__content-item">Разработанный маршрут с гидом группы</li>
+                <li class="price__content-item">Перелет и трансфер</li>
+                <li class="price__content-item">Проживание в хостелах при отелях</li>
+                <li class="price__content-item">Только завтраки в отелях</li>
+                <li class="price__content-item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <a class="button button--basic" href="">Купить тур сейчас</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
   </main>
+  <script src="js/swiper.bundle.min.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      // spaceBetween: 100,
+      freeMode: true,
+      slidesOffsetAfter: 100
+    });
+  </script>
 </body>
 </html>

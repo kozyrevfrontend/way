@@ -1,0 +1,16 @@
+.catalog {
+  max-width: 1444px;
+  margin: 0 auto;
+}
+
+.catalog__tabs {
+  margin-bottom: 81px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  position: relative;
+}

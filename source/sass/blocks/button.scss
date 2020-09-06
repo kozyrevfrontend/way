@@ -9,24 +9,15 @@
   background-color: $color-accent;
   cursor: pointer;
 
-  &--promo {
+  &--basic {
     display: flex;
     align-items: center;
-    width: 340px;
-    height: 75px;
-    padding-left: 40px;
-    margin-left: 56%;
-    margin-bottom: 30px;
 
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
-
-    background-image: url(../img/arrow-down.svg);
-    background-repeat: no-repeat;
-    background-position: 285px center;
 
     &:hover,
     &:focus {
@@ -36,6 +27,24 @@
     &:active {
       opacity: 0.7;
     }
+  }
+
+  &--promo {
+    width: 340px;
+    height: 75px;
+    padding-left: 40px;
+    margin-left: 56%;
+    margin-bottom: 30px;
+
+    background-image: url(../img/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: 285px center;
+  }
+
+  &--card {
+    justify-content: center;
+    width: 250px;
+    height: 75px;
   }
 }
 
