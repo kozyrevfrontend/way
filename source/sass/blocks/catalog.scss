@@ -1,6 +1,7 @@
 .catalog {
   max-width: 1444px;
   margin: 0 auto;
+  margin-top: -5px;
 }
 
 .catalog__tabs {
@@ -13,4 +14,10 @@
 
 .catalog__item {
   position: relative;
+}
+
+.catalog__wrapper {
+  background-image: url("../img/catalog-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 15px;
 }

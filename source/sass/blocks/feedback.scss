@@ -44,6 +44,8 @@
 }
 
 .feedback__author {
+  position: relative;
+
   margin: 0;
   margin-bottom: 2px;
   padding-left: 53px;
@@ -53,4 +55,40 @@
   line-height: 24px;
   letter-spacing: -1.2px;
   color: $color-basic-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+
+    display: block;
+    width: 38px;
+    height: 38px;
+  }
+
+  &--greace::before {
+    background-image: url("../img/feedback-avatar-greace.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--albania::before {
+    background-image: url("../img/feedback-avatar-albania.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--makedonia::before {
+    background-image: url("../img/feedback-avatar-makedonia.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--montenegro::before {
+    background-image: url("../img/feedback-avatar-montenegro.jpg");
+    background-repeat: no-repeat;
+  }
+
+  &--croatia::before {
+    background-image: url("../img/feedback-avatar-croatia.jpg");
+    background-repeat: no-repeat;
+  }
 }
