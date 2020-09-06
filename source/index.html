@@ -20,10 +20,10 @@
     <nav class="page-header__nav">
       <ul class="site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="#">О путешествии</a>
+          <a class="site-list__link" href="#tours">О путешествии</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Цены</a>
+          <a class="site-list__link" href="#price">Цены</a>
         </li>
       </ul>
     </nav>
@@ -35,10 +35,10 @@
       <div class="promo__wrapper">
         <h1 class="promo__title">Путешествие по Европе</h1>
         <p class="promo__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="button button--basic button--promo" href="#"><span>Смотреть тур</span></a>
+        <a class="button button--basic button--promo" href="#tabs"><span>Смотреть тур</span></a>
       </div>
     </section>
-    <section class="tours">
+    <section class="tours" id="tours">
       <h2 class="tours__title">Места посещения</h2>
       <p class="tours__offer">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="tours__list">
@@ -49,7 +49,7 @@
             <img class="tours__image" src="img/tours-greace-desktop@1x.jpg" srcset="img/tours-greace-desktop@2x.jpg 2x" alt="Тур в Грецию" loading="lazy">
           </picture>
           <div class="tours__wrapper">
-            <a class="tours__link" href="#"><span>Смотреть подробнее</span></a>
+            <a class="tours__link" href="#tabs"><span>Смотреть подробнее</span></a>
           </div>
         </li>
         <li class="tours__item" tabindex="0">
@@ -59,7 +59,7 @@
             <img class="tours__image" src="img/tours-albania-desktop@1x.jpg" srcset="img/tours-albania-desktop@2x.jpg 2x" alt="Тур в Албанию" loading="lazy">
           </picture>
           <div class="tours__wrapper">
-            <a class="tours__link" href="#"><span>Смотреть подробнее</span></a>
+            <a class="tours__link" href="#tabs"><span>Смотреть подробнее</span></a>
           </div>
         </li>
         <li class="tours__item" tabindex="0">
@@ -69,7 +69,7 @@
             <img class="tours__image" src="img/tours-makedonia-desktop@1x.jpg" srcset="img/tours-makedonia-desktop@2x.jpg 2x" alt="Тур в Македонию" loading="lazy">
           </picture>
           <div class="tours__wrapper">
-            <a class="tours__link" href="#"><span>Смотреть подробнее</span></a>
+            <a class="tours__link" href="#tabs"><span>Смотреть подробнее</span></a>
           </div>
         </li>
         <li class="tours__item" tabindex="0">
@@ -79,7 +79,7 @@
             <img class="tours__image" src="img/tours-montenegro-desktop@1x.jpg" srcset="img/tours-montenegro-desktop@2x.jpg 2x" alt="Тур в Черногорию" loading="lazy">
           </picture>
           <div class="tours__wrapper">
-            <a class="tours__link" href="#"><span>Смотреть подробнее</span></a>
+            <a class="tours__link" href="#tabs"><span>Смотреть подробнее</span></a>
           </div>
         </li>
         <li class="tours__item" tabindex="0">
@@ -89,14 +89,14 @@
             <img class="tours__image" src="img/tours-croatia-desktop@1x.jpg" srcset="img/tours-croatia-desktop@2x.jpg 2x" alt="Тур в Хорватию" loading="lazy">
           </picture>
           <div class="tours__wrapper">
-            <a class="tours__link" href="#"><span>Смотреть подробнее</span></a>
+            <a class="tours__link" href="#tabs"><span>Смотреть подробнее</span></a>
           </div>
         </li>
       </ul>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог туров</h2>
-      <div class="catalog__tabs tabs swiper-container">
+      <div class="catalog__tabs tabs swiper-container" id="tabs">
         <ul class="tabs__list swiper-wrapper" role="tablist" aria-label="Список доступных туров">
           <li class="tabs__item swiper-slide">
             <button class="tabs__button" type="button" role="tab" aria-selected="true" aria-controls="greace-tab" id="greace">Греция</button>
@@ -168,42 +168,42 @@
             </article>
           </li>
         </ul>
-        <section class="catalog__price price">
+        <section class="catalog__price price" id="price">
           <div class="price__wrapper">
             <h3 class="price__title">Цены</h3>
-            <p class="price__slogan">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-            <b class="price__contact-us">Свяжитесь с нами</b>
+            <p class="price__slogan">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+            <p class="price__contact-us">Свяжитесь с нами</p>
             <a class="price__phone" href="tel:749978468446">+7 (499) -784-684-46</a>
           </div>
           <ul class="price__list">
-            <li class="price__item">
-              <div class="price__item-wrapper">
-                <h4 class="price__item-title">Комплексный</h4>
-                <span class="price__value">$1999</span>
+            <li class="price__item fare">
+              <div class="fare__wrapper">
+                <h4 class="fare__title">Комплексный</h4>
+                <span class="fare__value">$1999</span>
               </div>
-              <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="price__content-list">
-                <li class="price__content-item">Разработанный маршрут с гидом группы</li>
-                <li class="price__content-item">Перелет, трансфер и проживание в отелях</li>
-                <li class="price__content-item">Завтраки, ужины в отелях и ланчи на природе</li>
-                <li class="price__content-item">Экскурсии по удивительно красивым местам Европы</li>
+              <p class="fare__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="fare__list">
+                <li class="fare__item fare__item--complex-guide">Разработанный маршрут с гидом группы</li>
+                <li class="fare__item">Перелет, трансфер и проживание в отелях</li>
+                <li class="fare__item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="fare__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <a class="button button--basic" href="">Купить тур сейчас</a>
+              <a class="button button--basic button--fare" href="">Купить тур сейчас</a>
             </li>
-            <li class="price__item">
-              <div class="price__item-wrapper">
-                <h4 class="price__item-title">Экономный</h4>
-                <span class="price__value">$1399</span>
+            <li class="price__item fare">
+              <div class="fare__wrapper">
+                <h4 class="fare__title fare__title--cheap">Экономный</h4>
+                <span class="fare__value fare__value--cheap">$1399</span>
               </div>
-              <p class="price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="price__content-list">
-                <li class="price__content-item">Разработанный маршрут с гидом группы</li>
-                <li class="price__content-item">Перелет и трансфер</li>
-                <li class="price__content-item">Проживание в хостелах при отелях</li>
-                <li class="price__content-item">Только завтраки в отелях</li>
-                <li class="price__content-item">Экскурсии по удивительно красивым местам Европы</li>
+              <p class="fare__text fare__text--cheap">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="fare__list">
+                <li class="fare__item">Разработанный маршрут с гидом группы</li>
+                <li class="fare__item">Перелет и трансфер</li>
+                <li class="fare__item">Проживание в хостелах при отелях</li>
+                <li class="fare__item">Только завтраки в отелях</li>
+                <li class="fare__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <a class="button button--basic" href="">Купить тур сейчас</a>
+              <a class="button button--basic button--fare" href="">Купить тур сейчас</a>
             </li>
           </ul>
         </section>

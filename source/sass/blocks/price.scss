@@ -1,0 +1,101 @@
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__wrapper {
+  order: 2;
+
+  max-width: 299px;
+  margin-right: 127px;
+  padding-top: 111px;
+}
+
+.price__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  color: $color-basic-dark;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 175px;
+    height: 3px;
+
+    background-color: $color-accent;
+  }
+}
+
+.price__slogan {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba($color-basic-dark, 0.7%);
+}
+
+.price__contact-us {
+  margin: 0;
+  margin-bottom: 12px;
+  padding-left: 45px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+  color: $color-accent-dark;
+}
+
+.price__phone {
+  padding-left: 46px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: -4px -4px;
+
+  transition: color 0.5s, opacity 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.price__list {
+  @include list-reset;
+
+  display: flex;
+  margin-left: 137px;
+
+  order: 1;
+}
+
+.price__item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

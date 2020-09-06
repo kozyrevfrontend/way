@@ -254,3 +254,12 @@ var navToggle = $('.button--toggle').addClass('button--nav-closed').on('click', 
     return delay;
   }
 }());
+
+// Плавный скролл
+var $page = $('html, body');
+$('a[href*="#"]').click(function () {
+  $page.animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 800);
+  return false;
+});

@@ -9,6 +9,8 @@
   background-color: $color-accent;
   cursor: pointer;
 
+  transition: background-color 0.5s, opacity 0.5s;
+
   &--basic {
     display: flex;
     align-items: center;
@@ -44,6 +46,13 @@
   &--card {
     justify-content: center;
     width: 250px;
+    height: 75px;
+  }
+
+  &--fare {
+    margin-top: auto;
+    justify-content: center;
+    width: 310px;
     height: 75px;
   }
 }

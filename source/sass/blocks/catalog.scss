@@ -10,6 +10,8 @@
 
 .catalog__list {
   @include list-reset;
+
+  margin-bottom: 240px;
 }
 
 .catalog__item {

@@ -53,6 +53,8 @@
 
   cursor: pointer;
 
+  transition: color 0.3s;
+
   &:hover,
   &:focus {
     color: $color-basic-dark;

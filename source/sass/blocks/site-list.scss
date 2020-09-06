@@ -17,6 +17,8 @@
   text-decoration: none;
   color: $color-accent-dark;
 
+  transition: color 0.5s, opacity 0.5s;
+
   &:hover,
   &:focus {
     color: $color-accent-hover;
