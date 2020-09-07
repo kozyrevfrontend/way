@@ -136,6 +136,19 @@
         opacity: 1;
       }
     }
+
+    &--card {
+      width: 250px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 29px;
+
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -182,6 +195,11 @@
       &:active {
         opacity: 1;
       }
+    }
+
+    &--card {
+      width: 288px;
+      margin-bottom: 50px;
     }
   }
 }

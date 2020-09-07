@@ -110,6 +110,10 @@
     background-image: url("../img/promo-bg-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/promo-bg-mobile@2x.jpg");
+    }
   }
 
   .promo__description {

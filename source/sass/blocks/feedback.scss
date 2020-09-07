@@ -1,4 +1,8 @@
-.feedback {
+.feedback__wrapper {
+  position: absolute;
+  top: 112px;
+  right: 137px;
+
   width: 382px;
   padding: 31px;
 
@@ -90,5 +94,159 @@
   &--croatia::before {
     background-image: url("../img/feedback-avatar-croatia.jpg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      z-index: -1;
+
+      display: block;
+      width: 100%;
+      height: 415px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--greace::before {
+      background-image: url("../img/card-bg-greace-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-greace-tablet@2x.jpg");
+      }
+    }
+
+    &--albania::before {
+      background-image: url("../img/card-bg-albania-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-albania-tablet@2x.jpg");
+      }
+    }
+
+    &--makedonia::before {
+      background-image: url("../img/card-bg-makedonia-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-makedonia-tablet@2x.jpg");
+      }
+    }
+
+    &--montenegro::before {
+      background-image: url("../img/card-bg-montenegro-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-montenegro-tablet@2x.jpg");
+      }
+    }
+
+    &--croatia::before {
+      background-image: url("../img/card-bg-croatia-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-croatia-tablet@2x.jpg");
+      }
+    }
+  }
+
+  .feedback__wrapper {
+    position: static;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback {
+    padding-top: 50px;
+
+    &--greace::before {
+      background-image: url("../img/card-bg-greace-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-greace-mobile@2x.jpg");
+      }
+    }
+
+    &--albania::before {
+      background-image: url("../img/card-bg-albania-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-albania-mobile@2x.jpg");
+      }
+    }
+
+    &--makedonia::before {
+      background-image: url("../img/card-bg-makedonia-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-makedonia-mobile@2x.jpg");
+      }
+    }
+
+    &--montenegro::before {
+      background-image: url("../img/card-bg-montenegro-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-montenegro-mobile@2x.jpg");
+      }
+    }
+
+    &--croatia::before {
+      background-image: url("../img/card-bg-croatia-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/card-bg-croatia-mobile@2x.jpg");
+      }
+    }
+  }
+
+  .feedback__wrapper {
+    width: 268px;
+    padding: 20px;
+    padding-left: 18px;
+  }
+
+  .feedback__title {
+    margin-bottom: 21px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::before {
+      left: 81px;
+    }
+  }
+
+  .feedback__text {
+    margin-bottom: 16px;
+
+    text-align: center;
+  }
+
+  .feedback__author {
+    padding-left: 0;
+    padding-top: 49px;
+
+    text-align: center;
+
+    &::before {
+      top: 0;
+      left: 96px;
+    }
   }
 }

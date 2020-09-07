@@ -64,3 +64,16 @@
     color: $color-accent;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .tabs__list {
+    max-width: 100%;
+    margin-left: 37px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tabs__list {
+    margin-left: 15px;
+  }
+}

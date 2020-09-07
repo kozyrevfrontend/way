@@ -6,30 +6,50 @@
     background-image: url("../img/card-bg-greace-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 607px top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/card-bg-greace-desktop@2x.jpg");
+    }
   }
 
   &--albania {
     background-image: url("../img/card-bg-albania-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 607px top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/card-bg-albania-desktop@2x.jpg");
+    }
   }
 
   &--makedonia {
     background-image: url("../img/card-bg-makedonia-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 607px top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/card-bg-makedonia-desktop@2x.jpg");
+    }
   }
 
   &--montenegro {
     background-image: url("../img/card-bg-montenegro-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 607px top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/card-bg-montenegro-desktop@2x.jpg");
+    }
   }
 
   &--croatia {
     background-image: url("../img/card-bg-croatia-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 607px top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/card-bg-croatia-desktop@2x.jpg");
+    }
   }
 }
 
@@ -73,8 +93,42 @@
   color: rgba($color-basic-dark, 0.7%);
 }
 
-.card__feedback {
-  position: absolute;
-  top: 112px;
-  right: 137px;
+@media (max-width: $tablet-width) {
+  .card {
+    position: relative;
+    padding-left: 0;
+
+    background: none;
+  }
+
+  .card__title {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 22px;
+
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .card__description {
+    max-width: 100%;
+    margin-bottom: 18px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }

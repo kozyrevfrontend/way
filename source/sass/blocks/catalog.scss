@@ -23,3 +23,34 @@
   background-repeat: no-repeat;
   background-position: center 15px;
 }
+
+@media (max-width: 1400px) {
+  .catalog__list {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .catalog {
+    max-width: 100%;
+    padding-top: 84px;
+  }
+
+  .catalog__wrapper {
+    background: none;
+  }
+
+  .catalog__tabs {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog {
+    padding-top: 10px;
+  }
+
+  .catalog__tabs {
+    margin-bottom: 24px;
+  }
+}
