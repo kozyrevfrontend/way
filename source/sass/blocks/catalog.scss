@@ -54,3 +54,9 @@
     margin-bottom: 24px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .catalog__list {
+    margin-bottom: 42px;
+  }
+}

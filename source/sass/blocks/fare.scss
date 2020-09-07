@@ -204,3 +204,10 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .fare {
+    min-height: auto;
+    margin-bottom: 31px;
+  }
+}

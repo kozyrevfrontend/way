@@ -205,3 +205,30 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .price__title {
+    padding-bottom: 0;
+    margin-bottom: 19px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .price__slogan {
+    margin-bottom: 19px;
+  }
+
+  .price__contact-us {
+    margin-left: -2px;
+  }
+
+  .price__phone {
+    margin-bottom: 42px;
+  }
+
+  .price__list {
+    width: 288px;
+    flex-direction: column;
+  }
+}
