@@ -143,3 +143,65 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .price__title {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .price__wrapper {
+    padding-top: 11px;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .price__slogan {
+    margin-bottom: 33px;
+  }
+
+  .price__contact-us {
+    margin-bottom: 9px;
+
+    font-size: 18px;
+  }
+
+  .price__phone {
+    position: relative;
+
+    padding-left: 0;
+    margin-bottom: 31px;
+
+    font-size: 18px;
+    color: $color-accent;
+
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      width: 187px;
+      height: 1px;
+
+      background-color: $color-accent;
+    }
+  }
+
+  .price__list {
+    width: 626px;
+    justify-content: space-between;
+  }
+
+  .price__item {
+    margin-right: 0;
+  }
+}

@@ -141,3 +141,66 @@
     transition: background-image 0.8s;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .fare {
+    max-width: 288px;
+    min-height: 629px;
+    padding-top: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .fare__title {
+    font-size: 24px;
+
+    &--cheap {
+      padding-top: 0;
+    }
+  }
+
+  .fare__wrapper {
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 12px;
+  }
+
+  .fare__value {
+    padding-top: 7px;
+
+    &--cheap {
+      margin-left: -10px;
+    }
+  }
+
+  .fare__text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    margin-bottom: 21px;
+
+    text-align: center;
+
+    &::after {
+      left: 20px;
+
+      width: 248px;
+    }
+  }
+
+  .fare__item {
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    &--complex-guide {
+      margin-bottom: 5px;
+    }
+
+    &::before {
+      left: 20px;
+    }
+  }
+}
