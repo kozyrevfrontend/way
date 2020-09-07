@@ -2,6 +2,7 @@
   max-width: 1444px;
   margin: 0 auto;
   margin-top: -5px;
+  margin-bottom: 139px;
 }
 
 .catalog__tabs {
@@ -9,8 +10,7 @@
 }
 
 .catalog__list {
-  @include list-reset;
-
+  margin: 0;
   margin-bottom: 240px;
 }
 
@@ -34,6 +34,7 @@
   .catalog {
     max-width: 100%;
     padding-top: 84px;
+    margin-bottom: 124px;
   }
 
   .catalog__wrapper {
@@ -48,6 +49,7 @@
 @media (max-width: $mobile-width) {
   .catalog {
     padding-top: 10px;
+    margin-bottom: 19px;
   }
 
   .catalog__tabs {

@@ -1,0 +1,160 @@
+.connection {
+  display: flex;
+  max-width: 1194px;
+  margin: 0 auto;
+  padding-top: 70px;
+
+  background-image: url("../img/connection-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 24px top;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/connection-bg-desktop@2x.jpg");
+  }
+}
+
+.connection__form {
+  width: 656px;
+  min-height: 315px;
+  margin-left: auto;
+  margin-bottom: 70px;
+  padding-left: 50px;
+  padding-right: 49px;
+  padding-top: 51px;
+  padding-bottom: 49px;
+
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba($color-basic-dark, 0.1%);
+  background-color: #ffffff;
+}
+
+.connection__slogan {
+  margin: 0;
+  margin-bottom: 11px;
+
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+}
+
+.connection__text {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.connection__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connection__wrapper-inner {
+  position: relative;
+  margin: 0;
+
+  &--phone {
+    &::before {
+      content: "+7";
+      position: absolute;
+      top: 16px;
+      left: 26px;
+
+      font-size: 14px;
+    }
+  }
+}
+
+.connection__input {
+  width: 269px;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 25px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: $color-accent-dark;
+
+  border: 1px solid rgba($color-basic-dark, 0.3%);
+  background-color: transparent;
+
+  &--phone {
+    padding-left: 51px;
+
+    background-image: url("../img/input-required-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 14px 9px;
+  }
+
+  &:invalid {
+    border-color: $color-accent;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .connection {
+    justify-content: center;
+    width: 100%;
+
+    background-image: url("../img/connection-bg-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/connection-bg-tablet@2x.jpg");
+    }
+  }
+
+  .connection__form {
+    min-height: 311px;
+    margin-left: 0;
+    margin-bottom: 75px;
+  }
+
+  .connection__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .connection {
+    padding-top: 0;
+
+    background-image: none;
+  }
+
+  .connection__form {
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 75px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-color: $color-basic-light;
+    box-shadow: none;
+  }
+
+  .connection__wrapper {
+    flex-direction: column;
+  }
+
+  .connection__input {
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
+  .connection__slogan {
+    margin-bottom: 20px;
+  }
+
+  .connection__text {
+    margin-bottom: 18px;
+  }
+}

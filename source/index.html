@@ -116,8 +116,8 @@
         </ul>
       </div>
       <div class="catalog__wrapper">
-        <ul class="catalog__list">
-          <li class="catalog__item card card--greace" tabindex="0" role="tabpanel" id="greace-tab" aria-labelledby="greace">
+        <div class="catalog__list">
+          <div class="catalog__item card card--greace" tabindex="0" role="tabpanel" id="greace-tab" aria-labelledby="greace">
             <h3 class="card__title">Греция</h3>
             <p class="card__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
             <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
@@ -128,8 +128,8 @@
                 <p class="feedback__author feedback__author--greace">Влада Голицина</p>
               </div>
             </article>
-          </li>
-          <li class="catalog__item card card--albania" tabindex="0" role="tabpanel" id="albania-tab" aria-labelledby="albania" hidden="">
+          </div>
+          <div class="catalog__item card card--albania" tabindex="0" role="tabpanel" id="albania-tab" aria-labelledby="albania" hidden="">
             <h3 class="card__title">Албания</h3>
             <p class="card__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
             <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
@@ -140,8 +140,8 @@
                 <p class="feedback__author feedback__author--albania">Маришка</p>
               </div>
             </article>
-          </li>
-          <li class="catalog__item card card--makedonia" tabindex="0" role="tabpanel" id="makedonia-tab" aria-labelledby="makedonia" hidden="">
+          </div>
+          <div class="catalog__item card card--makedonia" tabindex="0" role="tabpanel" id="makedonia-tab" aria-labelledby="makedonia" hidden="">
             <h3 class="card__title">Македония</h3>
             <p class="card__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
             <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
@@ -152,8 +152,8 @@
                 <p class="feedback__author feedback__author--makedonia">Михаил Кузьмин</p>
               </div>
             </article>
-          </li>
-          <li class="catalog__item card card--montenegro" tabindex="0" role="tabpanel" id="montenegro-tab" aria-labelledby="montenegro" hidden="">
+          </div>
+          <div class="catalog__item card card--montenegro" tabindex="0" role="tabpanel" id="montenegro-tab" aria-labelledby="montenegro" hidden="">
             <h3 class="card__title">Черногория</h3>
             <p class="card__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
             <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
@@ -164,8 +164,8 @@
                 <p class="feedback__author feedback__author--montenegro">Анастасия Мей</p>
               </div>
             </article>
-          </li>
-          <li class="catalog__item card card--croatia" tabindex="0" role="tabpanel" id="croatia-tab" aria-labelledby="croatia" hidden="">
+          </div>
+          <div class="catalog__item card card--croatia" tabindex="0" role="tabpanel" id="croatia-tab" aria-labelledby="croatia" hidden="">
             <h3 class="card__title">Хорватия</h3>
             <p class="card__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
             <a class="button button--basic button--card" href="#"><span>Купить тур сейчас</span></a>
@@ -176,8 +176,8 @@
                 <p class="feedback__author feedback__author--croatia">Владимир Мулицин</p>
               </div>
             </article>
-          </li>
-        </ul>
+          </div>
+        </div>
         <section class="catalog__price price" id="price">
           <div class="price__wrapper">
             <h3 class="price__title">Цены</h3>
@@ -219,6 +219,24 @@
         </section>
       </div>
     </section>
+    <section class="connection">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="connection__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="connection__slogan">У Вас остались вопросы?</p>
+        <p class="connection__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <div class="connection__wrapper">
+          <p class="connection__wrapper-inner connection__wrapper-inner--phone">
+            <label class="visually-hidden" for="user-phone">Введите номер телефона</label>
+            <input class="connection__input connection__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone" placeholder="Введите 10 цифр номера" required>
+          </p>
+          <p class="connection__wrapper-inner">
+            <label class="visually-hidden" for="user-email">Введите вашу почту</label>
+            <input class="connection__input" type="email" name="user-email" id="user-email" placeholder="E-mail">
+          </p>
+        </div>
+        <button class="button button--basic button--connection" type="submit"><span>Отправить</span></button>
+      </form>
+    </section>
   </main>
   <script src="js/swiper.bundle.min.js"></script>
   <script src="js/vendor.js"></script>
@@ -227,7 +245,6 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 'auto',
-      // spaceBetween: 100,
       freeMode: true,
       slidesOffsetAfter: 100
     });
