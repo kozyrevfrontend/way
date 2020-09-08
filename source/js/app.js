@@ -263,3 +263,10 @@ $('a[href*="#"]').click(function () {
   }, 800);
   return false;
 });
+
+// Свайп табов
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  freeMode: true,
+  slidesOffsetAfter: 100
+});

@@ -1,0 +1,17 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1148px;
+  margin: 0 auto;
+  margin-bottom: 62px;
+}
+
+@media (max-width: 1200px) {
+  .page-footer {
+    width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 50px;
+  }
+}

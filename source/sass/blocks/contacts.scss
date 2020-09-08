@@ -1,0 +1,161 @@
+.contacts {
+  position: relative;
+
+  width: 389px;
+  padding-left: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+
+    display: block;
+    width: 1px;
+    height: 189px;
+
+    background-color: #d7d9df;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+
+  color: $color-accent-dark;
+}
+
+.contacts__wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contacts__link {
+  position: relative;
+
+  padding-left: 42px;
+
+  color: $color-accent;
+
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    color: $color-accent-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--email {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 26px;
+      height: 20px;
+
+      background-image: url("../img/email.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+
+      display: block;
+      width: 218px;
+      height: 1px;
+
+      background-color: $color-accent;
+    }
+  }
+
+  &--phone {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 5px;
+
+      display: block;
+      width: 26px;
+      height: 24px;
+
+      background-image: url("../img/phone-gray.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+
+      display: block;
+      width: 168px;
+      height: 1px;
+
+      background-color: $color-accent;
+    }
+  }
+}
+
+.contacts__link-mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    width: 45%;
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 45.7%;
+    padding-left: 51px;
+
+    &::before {
+      top: 0;
+      left: 1px;
+
+      height: 177px;
+    }
+  }
+
+  .contacts__link {
+    &--email {
+      &::after {
+        width: 45px;
+      }
+    }
+  }
+
+  .contacts__link-mobile {
+    display: inline;
+  }
+
+  .contacts__link-desktop {
+    display: none;
+  }
+}
