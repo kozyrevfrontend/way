@@ -45,6 +45,8 @@
         <li class="tours__item" tabindex="0">
           <h3 class="tours__item-title">Греция</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tours-greace-mobile@1x.webp 1x, img/tours-greace-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/tours-greace-desktop@1x.webp 1x, img/tours-greace-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tours-greace-mobile@1x.jpg 1x, img/tours-greace-mobile@2x.jpg 2x">
             <img class="tours__image" src="img/tours-greace-desktop@1x.jpg" srcset="img/tours-greace-desktop@2x.jpg 2x" alt="Тур в Грецию" loading="lazy">
           </picture>
@@ -55,6 +57,8 @@
         <li class="tours__item" tabindex="0">
           <h3 class="tours__item-title">Албания</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tours-albania-mobile@1x.webp 1x, img/tours-albania-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/tours-albania-desktop@1x.webp 1x, img/tours-albania-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tours-albania-mobile@1x.jpg 1x, img/tours-albania-mobile@2x.jpg 2x">
             <img class="tours__image" src="img/tours-albania-desktop@1x.jpg" srcset="img/tours-albania-desktop@2x.jpg 2x" alt="Тур в Албанию" loading="lazy">
           </picture>
@@ -65,6 +69,8 @@
         <li class="tours__item" tabindex="0">
           <h3 class="tours__item-title">Македония</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tours-makedonia-mobile@1x.webp 1x, img/tours-makedonia-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/tours-makedonia-desktop@1x.webp 1x, img/tours-makedonia-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tours-makedonia-mobile@1x.jpg 1x, img/tours-makedonia-mobile@2x.jpg 2x">
             <img class="tours__image" src="img/tours-makedonia-desktop@1x.jpg" srcset="img/tours-makedonia-desktop@2x.jpg 2x" alt="Тур в Македонию" loading="lazy">
           </picture>
@@ -75,6 +81,8 @@
         <li class="tours__item" tabindex="0">
           <h3 class="tours__item-title">Черногория</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tours-montenegro-mobile@1x.webp 1x, img/tours-montenegro-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/tours-montenegro-desktop@1x.webp 1x, img/tours-montenegro-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tours-montenegro-mobile@1x.jpg 1x, img/tours-montenegro-mobile@2x.jpg 2x">
             <img class="tours__image" src="img/tours-montenegro-desktop@1x.jpg" srcset="img/tours-montenegro-desktop@2x.jpg 2x" alt="Тур в Черногорию" loading="lazy">
           </picture>
@@ -85,6 +93,8 @@
         <li class="tours__item" tabindex="0">
           <h3 class="tours__item-title">Хорватия</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tours-croatia-mobile@1x.webp 1x, img/tours-croatia-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/tours-croatia-desktop@1x.webp 1x, img/tours-croatia-desktop@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tours-croatia-mobile@1x.jpg 1x, img/tours-croatia-mobile@2x.jpg 2x">
             <img class="tours__image" src="img/tours-croatia-desktop@1x.jpg" srcset="img/tours-croatia-desktop@2x.jpg 2x" alt="Тур в Хорватию" loading="lazy">
           </picture>
@@ -320,12 +330,12 @@
       <h2 class="popup__title">Купить тур</h2>
       <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="popup__wrapper-inner popup__wrapper-inner--phone">
-          <label class="visually-hidden" for="user-phone">Введите номер телефона</label>
-          <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone" placeholder="Введите 10 цифр номера" required>
+          <label class="visually-hidden" for="user-phone-popup">Введите номер телефона</label>
+          <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone-popup" placeholder="Введите 10 цифр номера" required>
         </p>
         <p class="popup__wrapper-inner">
-          <label class="visually-hidden" for="user-email">Введите вашу почту</label>
-          <input class="popup__input" type="email" name="user-email" id="user-email" placeholder="E-mail">
+          <label class="visually-hidden" for="user-email-popup">Введите вашу почту</label>
+          <input class="popup__input" type="email" name="user-email" id="user-email-popup" placeholder="E-mail">
         </p>
         <button class="button button--basic button--popup" type="submit"><span>Отправить</span></button>
         <button class="button--popup-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
