@@ -238,10 +238,12 @@
           <p class="connection__wrapper-inner connection__wrapper-inner--phone">
             <label class="visually-hidden" for="user-phone">Введите номер телефона</label>
             <input class="connection__input connection__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone" placeholder="Введите 10 цифр номера" required>
+            <span class="connection__error-message">Данные не верны</span>
           </p>
           <p class="connection__wrapper-inner">
             <label class="visually-hidden" for="user-email">Введите вашу почту</label>
             <input class="connection__input" type="email" name="user-email" id="user-email" placeholder="E-mail">
+            <span class="connection__error-message">Данные не верны</span>
           </p>
         </div>
         <button class="button button--basic button--connection" type="submit"><span>Отправить</span></button>
@@ -333,10 +335,12 @@
         <p class="popup__wrapper-inner popup__wrapper-inner--phone">
           <label class="visually-hidden" for="user-phone-popup">Введите номер телефона</label>
           <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone-popup" placeholder="Введите 10 цифр номера" required autofocus>
+          <span class="popup__error-message">Данные не верны</span>
         </p>
         <p class="popup__wrapper-inner">
-          <label class="visually-hidden" for="user-email-popup">Введите вашу почту</label>
+          <label class="visually-hidden popup__input-label" for="user-email-popup">Введите вашу почту</label>
           <input class="popup__input" type="email" name="user-email" id="user-email-popup" placeholder="E-mail">
+          <span class="popup__error-message">Данные не верны</span>
         </p>
         <button class="button button--basic button--popup" type="submit"><span>Отправить</span></button>
         <button class="button--popup-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>

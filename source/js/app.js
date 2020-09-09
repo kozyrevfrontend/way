@@ -114,6 +114,42 @@
   });
 })();
 
+// Валидация полей ввода
+(function () {
+  var showErrorMessage = function (element) {
+    element.nextElementSibling.style.display = 'block';
+  };
+
+  var hideErrorMessage = function (element) {
+    element.nextElementSibling.style.display = 'none';
+  };
+
+  var popupInputs = document.querySelectorAll('.popup__input');
+
+  popupInputs.forEach(function (input) {
+    input.addEventListener('change', function () {
+      localStorage.setItem(input.id, input.value);
+      if (input.validity.typeMismatch || input.validity.patternMismatch) {
+        showErrorMessage(input);
+      } else if (input.validity.valid) {
+        hideErrorMessage(input);
+      }
+    });
+  });
+
+  var connectionInputs = document.querySelectorAll('.connection__input');
+
+  connectionInputs.forEach(function (input) {
+    input.addEventListener('change', function () {
+      localStorage.setItem(input.id, input.value);
+      if (input.validity.typeMismatch || input.validity.patternMismatch) {
+        showErrorMessage(input);
+      } else if (input.validity.valid) {
+        hideErrorMessage(input);
+      }
+    });
+  });
+})();
 
 // Табы
 // (взял реализацию из спецификации wai-aria-practices 1.1)

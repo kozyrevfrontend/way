@@ -98,6 +98,19 @@
   }
 }
 
+.connection__error-message {
+  position: absolute;
+  top: -16px;
+  left: 0;
+
+  display: none;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: $color-accent;
+}
+
 @media (max-width: $tablet-width) {
   .connection {
     justify-content: center;
