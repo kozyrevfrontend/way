@@ -326,12 +326,13 @@
     </section>
   </footer>
   <div class="popup">
+    <div class="popup__overlay"></div>
     <div class="popup__wrapper">
       <h2 class="popup__title">Купить тур</h2>
       <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="popup__wrapper-inner popup__wrapper-inner--phone">
           <label class="visually-hidden" for="user-phone-popup">Введите номер телефона</label>
-          <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone-popup" placeholder="Введите 10 цифр номера" required>
+          <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone-popup" placeholder="Введите 10 цифр номера" required autofocus>
         </p>
         <p class="popup__wrapper-inner">
           <label class="visually-hidden" for="user-email-popup">Введите вашу почту</label>
@@ -343,6 +344,7 @@
     </div>
   </div>
   <div class="popup-success">
+    <div class="popup-success__overlay"></div>
     <div class="popup-success__wrapper">
       <p class="popup-success__message">Форма успешно отправлена, спасибо! :)</p>
       <button class="button--popup-success-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>

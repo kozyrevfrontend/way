@@ -28,11 +28,14 @@
   var openPopup = function () {
     popup.removeClass('popup--closed').addClass('popup--opened');
     document.addEventListener('keydown', onPopupEscPress);
+    userPhoneInput.focus();
+    popupOverlay.addEventListener('click', closePopup);
   };
 
   var closePopup = function () {
     popup.removeClass('popup--opened').addClass('popup--closed');
     document.removeEventListener('keydown', onPopupEscPress);
+    popupOverlay.removeEventListener('click', closePopup);
   };
 
   var onPopupEscPress = function (evt) {
@@ -49,6 +52,8 @@
   };
 
   var popup = $('.popup').addClass('popup--closed');
+  var popupOverlay = document.querySelector('.popup__overlay');
+  var userPhoneInput = $('#user-phone-popup');
 
   var fareButtons = document.querySelectorAll('.button--fare');
   fareButtons.forEach(function (fareButton) {
@@ -70,11 +75,13 @@
   var popupSuccessOpen = function () {
     popupSuccess.removeClass('popup-success--closed').addClass('popup-success--opened');
     document.addEventListener('keydown', onPopupSuccessEscPress);
+    popupSuccessOverlay.addEventListener('click', popupSuccessClose);
   };
 
   var popupSuccessClose = function () {
     popupSuccess.removeClass('popup-success--opened').addClass('popup-success--closed');
     document.removeEventListener('keydown', onPopupSuccessEscPress);
+    popupSuccessOverlay.removeEventListener('click', popupSuccessClose);
   };
 
   var onPopupSuccessEscPress = function (evt) {
@@ -88,7 +95,7 @@
   };
 
   var popupSuccess = $('.popup-success').addClass('popup-success--closed');
-
+  var popupSuccessOverlay = document.querySelector('.popup-success__overlay');
   var popup = $('.popup').addClass('popup--closed');
 
   var popupForm = $('.popup__form').on('submit', function (evt) {

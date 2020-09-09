@@ -1,22 +1,9 @@
 .popup {
   &--opened {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     z-index: 100;
-
-    width: 728px;
-    height: 444px;
-
-    box-shadow: 0 4px 100px rgba($color-basic-dark, 0.7%);
-    background-image: url("../img/popup-bg@1x.jpg");
-    background-repeat: no-repeat;
-
-    transform: translate(-50%, -50%);
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/popup-bg@2x.jpg");
-    }
   }
 
   &--closed {
@@ -24,14 +11,33 @@
   }
 }
 
+.popup__overlay {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba($color-basic-dark, 0.5%);
+}
+
 .popup__wrapper {
-  position: relative;
-  width: 390px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 728px;
   min-height: 444px;
   margin-left: auto;
   padding-top: 72px;
+  padding-left: 338px;
 
   background-color: $color-basic-light;
+  background-image: url("../img/popup-bg@1x.jpg");
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/popup-bg@2x.jpg");
+  }
 }
 
 .popup__title {
@@ -92,20 +98,13 @@
 }
 
 @media (max-width: $mobile-width) {
-  .popup {
-    &--opened {
-      width: 300px;
-      height: 444px;
-
-      box-shadow: 0 4px 10px rgba($color-basic-dark, 0.7%);
-      background-image: none;
-    }
-  }
-
   .popup__wrapper {
     width: 300px;
     min-height: 444px;
     margin-left: 0;
     padding-top: 72px;
+    padding-left: 0;
+
+    background-image: none;
   }
 }
