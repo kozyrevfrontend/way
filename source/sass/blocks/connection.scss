@@ -127,6 +127,7 @@
 @media (max-width: $mobile-width) {
   .connection {
     padding-top: 0;
+    margin-bottom: 41px;
 
     background-image: none;
   }
@@ -134,7 +135,7 @@
   .connection__form {
     width: 100%;
     min-height: auto;
-    margin-bottom: 75px;
+    margin-bottom: 30px;
     padding-left: 16px;
     padding-right: 16px;
 

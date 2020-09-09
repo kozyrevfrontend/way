@@ -68,3 +68,39 @@
     padding-right: 50px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .next-tours {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+  .next-tours__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .next-tours__title {
+    text-align: center;
+  }
+
+  .next-tours__list {
+    width: 144px;
+    margin-bottom: 15px;
+
+    &--pr {
+      padding-right: 10px;
+    }
+
+    &--pl {
+      padding-left: 10px;
+    }
+  }
+
+  .next-tours__item {
+    text-align: center;
+  }
+}

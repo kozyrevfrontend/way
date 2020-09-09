@@ -73,3 +73,17 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .corporate-tours {
+    padding-top: 30px;
+    padding-left: 7px;
+    padding-right: 0;
+
+    &::before {
+      top: 0;
+
+      width: 97.29%;
+    }
+  }
+}
