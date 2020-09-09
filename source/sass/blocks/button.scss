@@ -68,6 +68,89 @@
       font-family: "Montserrat", "Arial", sans-serif;
     }
   }
+
+  &--popup {
+    display: flex;
+    justify-content: center;
+    width: 176px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    span {
+      font-family: "Montserrat", "Arial", sans-serif;
+    }
+  }
+
+  &--popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 10px;
+
+      width: 31px;
+      height: 1px;
+
+      background-color: rgba($color-accent-dark, 0.2%);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--popup-success-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 10px;
+
+      width: 31px;
+      height: 1px;
+
+      background-color: rgba($color-accent-dark, 0.2%);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 @media (max-width: $tablet-width) {

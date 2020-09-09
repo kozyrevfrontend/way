@@ -1,23 +1,94 @@
 'use strict';
 
 // Меню-бургер
-var navMain = $('.page-header__nav').addClass('page-header__nav--closed');
-var navToggle = $('.button--toggle').addClass('button--nav-closed').on('click', function () {
-  if (navMain.hasClass('page-header__nav--closed')) {
+(function () {
+  var openNavigation = function () {
     navMain.removeClass('page-header__nav--closed').addClass('page-header__nav--opened');
     navToggle.removeClass('button--nav-closed').addClass('button--nav-opened');
-  } else {
+  };
+
+  var closeNavigation = function () {
     navMain.addClass('page-header__nav--closed').removeClass('page-header__nav--opened');
     navToggle.addClass('button--nav-closed').removeClass('button--nav-opened');
-  }
-});
+  };
+
+  var navMain = $('.page-header__nav').addClass('page-header__nav--closed');
+  var navToggle = $('.button--toggle').addClass('button--nav-closed').on('click', function () {
+    if (navMain.hasClass('page-header__nav--closed')) {
+      openNavigation();
+    } else {
+      closeNavigation();
+    }
+  });
+})();
+
+// Попап с формой
+// (попытался написать с синтаксисом jQuery, но в консоль постоянно сыпались ошибки)
+(function () {
+  var openPopup = function () {
+    popup.removeClass('popup--closed').addClass('popup--opened');
+  };
+
+  var closePopup = function () {
+    popup.removeClass('popup--opened').addClass('popup--closed');
+  };
+
+  var addClickListener = function (button) {
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      openPopup();
+    });
+  };
+
+  var popup = $('.popup').addClass('popup--closed');
+
+  var fareButtons = document.querySelectorAll('.button--fare');
+  fareButtons.forEach(function (fareButton) {
+    addClickListener(fareButton);
+  });
+
+  var cardButtons = document.querySelectorAll('.button--card');
+  cardButtons.forEach(function (fareButton) {
+    addClickListener(fareButton);
+  });
+
+  var popupToggle = $('.button--popup-close').on('click', function () {
+    closePopup();
+  });
+})();
+
+// Попап с сообщением об успешной отправке формы
+(function () {
+  var popupSuccessOpen = function () {
+    popupSuccess.removeClass('popup-success--closed').addClass('popup-success--opened');
+  };
+
+  var popupSuccessClose = function () {
+    popupSuccess.removeClass('popup-success--opened').addClass('popup-success--closed');
+  };
+
+  var closePopup = function () {
+    popup.removeClass('popup--opened').addClass('popup--closed');
+  };
+
+  var popupSuccess = $('.popup-success').addClass('popup-success--closed');
+
+  var popup = $('.popup').addClass('popup--closed');
+
+  var popupForm = $('.popup__form').on('submit', function (evt) {
+    evt.preventDefault();
+    closePopup();
+    popupSuccessOpen();
+  });
+
+  var popupSuccessCloseButton = $('.button--popup-success-close').on('click', function () {
+    popupSuccessClose();
+  });
+})();
 
 
 // Табы
-/*
-*   This content is licensed according to the W3C Software License at
-*   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
-*/
+// (взял реализацию из спецификации wai-aria-practices 1.1)
 (function () {
   var tablist = document.querySelectorAll('[role="tablist"]')[0];
   var tabs;
@@ -256,15 +327,18 @@ var navToggle = $('.button--toggle').addClass('button--nav-closed').on('click', 
 }());
 
 // Плавный скролл
-var $page = $('html, body');
-$('a[href*="#"]').click(function () {
-  $page.animate({
-    scrollTop: $($.attr(this, 'href')).offset().top
-  }, 800);
-  return false;
-});
+(function () {
+  var $page = $('html, body');
+  $('a[href*="#"]').click(function () {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    return false;
+  });
+})();
 
 // Свайп табов
+// (использовал библиотеку Swiper.js)
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 'auto',
   freeMode: true,

@@ -213,7 +213,7 @@
                 <li class="fare__item">Только завтраки в отелях</li>
                 <li class="fare__item">Экскурсии по удивительно красивым местам Европы</li>
               </ul>
-              <a class="button button--basic button--fare" href="">Купить тур сейчас</a>
+              <a class="button button--basic button--fare" href="#">Купить тур сейчас</a>
             </li>
           </ul>
         </section>
@@ -315,7 +315,29 @@
       <p class="corporate-tours__description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
     </section>
   </footer>
-  <script src="js/swiper.bundle.min.js"></script>
+  <div class="popup">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Купить тур</h2>
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="popup__wrapper-inner popup__wrapper-inner--phone">
+          <label class="visually-hidden" for="user-phone">Введите номер телефона</label>
+          <input class="popup__input popup__input--phone" type="text" inputmode="numeric" pattern="[0-9]{10}" name="user-phone" id="user-phone" placeholder="Введите 10 цифр номера" required>
+        </p>
+        <p class="popup__wrapper-inner">
+          <label class="visually-hidden" for="user-email">Введите вашу почту</label>
+          <input class="popup__input" type="email" name="user-email" id="user-email" placeholder="E-mail">
+        </p>
+        <button class="button button--basic button--popup" type="submit"><span>Отправить</span></button>
+        <button class="button--popup-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-success">
+    <div class="popup-success__wrapper">
+      <p class="popup-success__message">Форма успешно отправлена, спасибо! :)</p>
+      <button class="button--popup-success-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
+    </div>
+  </div>
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
 </body>
