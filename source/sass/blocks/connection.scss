@@ -52,6 +52,7 @@
 .connection__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .connection__wrapper-inner {
