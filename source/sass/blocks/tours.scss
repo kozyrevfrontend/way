@@ -158,16 +158,17 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $color-secondary-light;
+  opacity: 0.5;
 
   border: 1px solid rgba($color-secondary-light, 0.7%);
 
   &:hover,
   &:focus {
-    opacity: 0.9;
+    opacity: 1;
   }
 
   &:active {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 
